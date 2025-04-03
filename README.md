@@ -6,7 +6,7 @@ A modern, interactive, and responsive portfolio website showcasing my skills, pr
 
 ## 🚀 Live Demo
 
-[View Live Site](https://allankioni.github.io/allankioni-portfolio)
+[View Live Site](https://allankioni.github.io/AllanKioni-Portfolio/)
 
 ## ✨ Features
 
