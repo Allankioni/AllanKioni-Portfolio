@@ -153,6 +153,7 @@ Feel free to reach out for any questions or collaboration opportunities:
 - **LinkedIn**: [allankioni](https://linkedin.com/in/allankioni)
 - **GitHub**: [allankioni](https://github.com/allankioni)
 - **Twitter**: [allankioni](https://twitter.com/allankioni)
+- **Whatsapp**: [+254 741 235450](https://api.whatsapp.com/send?phone=+254741235450)
 
 ## 📄 License
 
