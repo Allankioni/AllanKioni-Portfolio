@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan Muhoro Kioni - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <canvas id="interactive-bg"></canvas>
+    <nav class="navbar">
+        <div class="nav-brand">Allan Kioni</div>
+        <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" title="Home"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a>
+            <a href="#about" title="About"><i class="fas fa-user"></i> <span class="nav-text">About</span></a>
+            <a href="#projects" title="Projects"><i class="fas fa-briefcase"></i> <span class="nav-text">Projects</span></a>
+            <a href="#contact" title="Contact"><i class="fas fa-envelope"></i> <span class="nav-text">Contact</span></a>
+            <div class="nav-controls">
+                <div class="theme-selector">
+                    <button id="themeMenuBtn" class="theme-menu-btn" aria-label="Change theme">
+                        <i class="fas fa-palette"></i>
+                    </button>
+                    <div id="themeDropdown" class="theme-dropdown">
+                        <button class="theme-option" data-theme="default">
+                            <span class="theme-indicator"></span>Default
+                        </button>
+                        <button class="theme-option" data-theme="tropical">
+                            <span class="theme-indicator"></span>Tropical
+                        </button>
+                        <button class="theme-option" data-theme="vintage">
+                            <span class="theme-indicator"></span>Vintage
+                        </button>
+                        <button class="theme-option" data-theme="natural">
+                            <span class="theme-indicator"></span>Natural
+                        </button>
+                        <button class="theme-option" data-theme="cool">
+                            <span class="theme-indicator"></span>Cool
+                        </button>
+                        <button class="theme-option" data-theme="dark">
+                            <span class="theme-indicator"></span>Dark
+                        </button>
+                    </div>
+                </div>
+                <button id="animationToggle" class="animation-toggle" title="Change Animation">
+                    <i class="fas fa-magic"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="animated-border"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Allan Muhoro Kioni</h1>
+            <p>Web Developer | Android Developer | IoT Specialist</p>
+            <a href="#projects" class="cta-button">
+                <span class="light-beam"></span>
+                View My Work
+            </a>
+        </div>
+        <div class="geometric-shapes"></div>
+    </section>
+
+    <!-- Book that opens on scroll -->
+    <div class="book-container">
+        <div class="book" id="scrollBook">
+            <div class="book-cover">
+                <h2>My Portfolio</h2>
+            </div>
+            <div class="book-page left-page">
+                <h3>About</h3>
+                <p>Web Developer<br>Android Developer<br>IoT Specialist</p>
+            </div>
+            <div class="book-page right-page">
+                <h3>Skills</h3>
+                <p>HTML/CSS<br>JavaScript<br>React<br>Node.js<br>Python</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="about-sidebar" data-aos="fade-right" data-aos-duration="800">
+            <h2>About Me</h2>
+            <p class="about-text">I'm a passionate full-stack developer with expertise in web development, Android applications, and IoT solutions. With a strong foundation in modern technologies and a keen eye for user experience, I create innovative solutions that make a difference.</p>
+            
+            <div class="education-section" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-graduation-cap"></i> Educational Background</h3>
+                <div class="education-content">
+                    <p class="degree">Degree in Mechatronics Technology</p>
+                    <p class="university">Meru University of Science and Technology</p>
+                    <a href="CV.pdf" class="cv-button" download>
+                        <i class="fas fa-download"></i> Download My CV
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-highlight" data-aos="fade-up" data-aos-delay="250">
+                <h3><i class="fas fa-project-diagram"></i> Featured Project</h3>
+                <div class="highlight-content">
+                    <div class="highlight-image">
+                        <img src="images/eco-recyco.jpg" alt="Eco-Recyco" class="eco-recyco-logo">
+                    </div>
+                    <div class="highlight-text">
+                        <p class="highlight-title">Eco-Recyco</p>
+                        <p class="highlight-desc">E-Waste Management System</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-bars" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-bar">
+                    <span class="skill-label">Web Development</span>
+                    <div class="skill-progress" data-progress="90"></div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-label">Android Development</span>
+                    <div class="skill-progress" data-progress="85"></div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-label">IoT Projects</span>
+                    <div class="skill-progress" data-progress="75"></div>
+                </div>
+            </div>
+        </div>
+        <div class="about-content" data-aos="fade-left" data-aos-duration="800">
+            <div class="tech-stack">
+                <h3>Tech Stack</h3>
+                <div class="tech-filters">
+                    <button class="tech-filter-btn active" data-filter="all">All</button>
+                    <button class="tech-filter-btn" data-filter="web">Web</button>
+                    <button class="tech-filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="tech-filter-btn" data-filter="iot">IoT</button>
+                </div>
+                <div class="tech-items">
+                    <span class="tech-item" data-category="web" data-description="Advanced HTML5 with semantic elements and modern features" style="--skill-level: 95%">
+                        HTML5
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="web" data-description="Expert in CSS3, animations, and responsive design" style="--skill-level: 90%">
+                        CSS3
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="web" data-description="Modern JavaScript ES6+ and DOM manipulation" style="--skill-level: 85%">
+                        JavaScript
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="web" data-description="Type-safe development with TypeScript" style="--skill-level: 80%">
+                        TypeScript
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="web" data-description="Building dynamic UIs with React.js" style="--skill-level: 85%">
+                        React.js
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="web" data-description="Server-side development with Node.js" style="--skill-level: 80%">
+                        Node.js
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="web" data-description="RESTful APIs with Express.js" style="--skill-level: 75%">
+                        Express.js
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="web" data-description="NoSQL database design and management" style="--skill-level: 75%">
+                        MongoDB
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="mobile" data-description="Native Android app development" style="--skill-level: 85%">
+                        Android
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="mobile" data-description="Java application development" style="--skill-level: 80%">
+                        Java
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="mobile" data-description="Modern Android development with Kotlin" style="--skill-level: 75%">
+                        Kotlin
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="iot" data-description="IoT prototyping and development" style="--skill-level: 85%">
+                        Arduino
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="iot" data-description="Linux-based IoT solutions" style="--skill-level: 80%">
+                        Raspberry Pi
+                        <span class="skill-indicator"></span>
+                    </span>
+                    <span class="tech-item" data-category="iot" data-description="IoT messaging protocol implementation" style="--skill-level: 75%">
+                        MQTT
+                        <span class="skill-indicator"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline">
+        <h2 data-aos="fade-up">Professional Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Full Stack Developer</h3>
+                    <p>Leading development of E-Waste Management System</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>IoT Specialist</h3>
+                    <p>Implemented smart home automation solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 data-aos="fade-up">Featured Projects</h2>
+            
+            <!-- Project Filters -->
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="android">Android</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+            </div>
+            
+            <!-- Featured Projects (Showcase Style) -->
+            <div class="featured-projects">
+                <!-- Eco-Recyco Featured Project -->
+                <div class="project-showcase" data-category="web" data-aos="fade-up">
+                    <div class="project-showcase-content">
+                        <div class="project-showcase-text">
+                            <div class="project-tag">Featured Web Project</div>
+                            <h3>Eco-Recyco</h3>
+                            <p class="project-description">A comprehensive E-Waste Management System designed to connect e-waste sellers with recyclers in a sustainable marketplace</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">WebSocket</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-recycle"></i>
+                                    <span>Sustainable Solutions for Electronic Waste</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span>Buy and Sell E-Waste Responsibly</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Track Environmental Impact</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Allankioni/ECO-RECYCO" class="project-link primary"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="project-link secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="project-showcase-image eco-recyco-demo">
+                            <img src="images/brave_screenshot_localhost.png" alt="Eco-Recyco E-Waste Management System">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- GestureGuard Featured Project -->
+                <div class="project-showcase" data-category="iot" data-aos="fade-up">
+                    <div class="project-showcase-content reverse">
+                        <div class="project-showcase-text">
+                            <div class="project-tag">Featured IoT Project</div>
+                            <h3>GestureGuard</h3>
+                            <p class="project-description">A cutting-edge security system that combines voice recognition with hand gesture tracking to create a seamless two-factor authentication experience for IoT device control</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">MediaPipe</span>
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">Bluetooth</span>
+                            </div>
+                            <div class="project-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-hand-paper"></i>
+                                    <span>Advanced Hand Gesture Recognition</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Voice Command Integration</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-bluetooth"></i>
+                                    <span>Bluetooth Communication</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Multi-factor Security</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Allankioni/GestureGuard" class="project-link primary"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/Allankioni/GestureGuard#how-it-works" class="project-link secondary"><i class="fas fa-info-circle"></i> Documentation</a>
+                            </div>
+                        </div>
+                        <div class="project-showcase-image gesture-guard-demo">
+                            <img src="images/gesture-guard.jpg" alt="GestureGuard Hand Gesture Recognition">
+                            <div class="gesture-info">
+                                <div class="status">Status: Waiting for voice authentication</div>
+                                <div class="gesture">Gesture: FINGERS:4</div>
+                                <div class="connection">Arduino: Connected</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Regular Project Grid -->
+            <h3 class="section-subheading" data-aos="fade-up">More Projects</h3>
+            <div class="project-grid">
+                <!-- E-Waste Management System Card -->
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="image1.png" alt="E-Waste Management System" class="project-featured-image">
+                        </div>
+                        <div class="project-content">
+                            <h4>E-Waste Management System</h4>
+                            <p>A comprehensive full-stack application built with modern technologies</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Allankioni/ECO-RECYCO" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tailor's Clothing Catalog Card -->
+                <div class="project-card" data-category="android" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/WhatsApp Image 2025-04-02 at 20.07.56_15b2b621.jpg" alt="Tailor's Clothing Catalog" class="project-featured-image">
+                        </div>
+                        <div class="project-content">
+                            <h4>Tailor's Clothing Catalog</h4>
+                            <p>An Android application designed for tailors to efficiently organize and showcase their clothing collections</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Allankioni/Clothing_Gallery_1.0.0.0" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#" class="project-link"><i class="fab fa-google-play"></i> Play Store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Smart Home Automation System Card -->
+                <div class="project-card" data-category="iot" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-card-inner">
+                        <div class="project-image">
+                            <img src="images/smart-home.jpg" alt="Smart Home Automation System" class="project-featured-image">
+                        </div>
+                        <div class="project-content">
+                            <h4>Smart Home Automation</h4>
+                            <p>A comprehensive IoT solution for home automation using Raspberry Pi and Arduino</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Raspberry Pi</span>
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">MQTT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/parikshitpagare/smart-home-automation-rtos" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://www.youtube.com/watch?v=aT6Lj6hBVUk" class="project-link"><i class="fas fa-video"></i> Demo Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2 data-aos="fade-up">Latest Insights</h2>
+        <div class="blog-grid">
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="blog-content">
+                    <h3>The Future of Web Development</h3>
+                    <p class="blog-meta">March 15, 2024 | Web Development</p>
+                    <div class="blog-image">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240509115836/The-Future-of-Web-Development-[Top-Trends-and-Predictions].webp" alt="Night skyline of a smart city" class="city-image">
+                    </div>
+                    <p class="blog-excerpt">The web development landscape is rapidly evolving with groundbreaking technologies. Progressive Web Apps (PWAs) are revolutionizing user experience by combining the best of web and mobile apps. AI and Machine Learning integration is enabling smarter, more personalized web applications. WebAssembly is pushing the boundaries of web performance, while No-Code/Low-Code platforms are democratizing web development...</p>
+                    <div class="tech-trends">
+                        <span class="trend-tag">PWAs</span>
+                        <span class="trend-tag">AI/ML</span>
+                        <span class="trend-tag">WebAssembly</span>
+                        <span class="trend-tag">No-Code</span>
+                    </div>
+                </div>
+                <a href="https://www.geeksforgeeks.org/future-of-web-development/" class="read-more article-link" id="webDevArticle" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.geeksforgeeks.org/future-of-web-development/', '_blank'); return false;">Read Full Article</a>
+            </article>
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="blog-content">
+                    <h3>IoT in Smart Cities</h3>
+                    <p class="blog-meta">March 10, 2024 | IoT</p>
+                    <div class="blog-image">
+                        <img src="https://www.sandtech.com/wp-content/uploads/2024/06/view-chicago-skyline-lake-by-night-usa-1536x911.jpg" alt="Night skyline of a smart city" class="city-image">
+                    </div>
+                    <p class="blog-excerpt">How IoT is transforming urban infrastructure and city planning. Smart cities leverage interconnected sensors and devices to optimize resource management, enhance public safety, improve transportation systems, and create more sustainable urban environments. IoT solutions enable real-time monitoring of traffic, air quality, energy consumption, and public services...</p>
+                    <div class="tech-trends">
+                        <span class="trend-tag">Smart Sensors</span>
+                        <span class="trend-tag">Urban Analytics</span>
+                        <span class="trend-tag">5G</span>
+                        <span class="trend-tag">Edge Computing</span>
+                    </div>
+                </div>
+                <a href="https://www.techtarget.com/iotagenda/definition/smart-city" class="read-more article-link" id="iotArticle" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.techtarget.com/iotagenda/definition/smart-city', '_blank'); return false;">Read Full Article</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 data-aos="fade-up">What People Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-content">
+                    <p>"Allan's expertise in web development helped us create a robust and scalable solution for our e-commerce platform."</p>
+                    <div class="testimonial-author">- Sarah Johnson, Tech Lead</div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-content">
+                    <p>"His understanding of IoT technologies and implementation skills are outstanding."</p>
+                    <div class="testimonial-author">- Michael Chen, Project Manager</div>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="testimonial-content">
+                    <p>"The 3D models created by Allan were precise and exactly what we needed for our manufacturing process."</p>
+                    <div class="testimonial-author">- David Smith, Production Director</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>kioniallan@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+254 741 235 450</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Nairobi, Kenya</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-delay="200">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://github.com/allankioni" class="social-icon" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/allankioni" class="social-icon" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/allankioni" class="social-icon" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/254741235450" class="social-icon whatsapp-icon" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Allan Muhoro Kioni. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
